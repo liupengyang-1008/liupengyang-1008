@@ -267,7 +267,7 @@ $$\frac{de_j}{dt} = -\nabla_j L, \quad L = L_{\text{task}} + \mu \cdot R_{\text{
 
 **定理（DIS-1）**：在 (H1)(H2) 下，任意锚点对 (j,k) 的分离度 r(t) = ‖e_j(t) − e_k(t)‖ 满足
 
-$$r(t) \ge \min\left{r(0),\; \sqrt{2\mu / L_1}\right} \quad \forall t \ge 0$$
+$`r(t) \ge \min\left\{r(0),\; \sqrt{2\mu / L_1}\right\} \quad \forall t \ge 0`$
 
 即**锚点永不坍缩**（r → 0 不可能），且分离度下确界 ≥ min{初始分离度, √(2μ/L_1)}。
 
