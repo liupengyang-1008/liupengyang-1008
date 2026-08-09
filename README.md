@@ -267,7 +267,7 @@ $$\frac{de_j}{dt} = -\nabla_j L, \quad L = L_{\text{task}} + \mu \cdot R_{\text{
 
 **定理（DIS-1）**：在 (H1)(H2) 下，任意锚点对 (j,k) 的分离度 r(t) = ‖e_j(t) − e_k(t)‖ 满足
 
-$$r(t) \ge \min\left\{r(0),\; \sqrt{2\mu / L_1}\right} \quad \forall t \ge 0$$
+$$r(t) \ge \min\left{r(0),\; \sqrt{2\mu / L_1}\right} \quad \forall t \ge 0$$
 
 即**锚点永不坍缩**（r → 0 不可能），且分离度下确界 ≥ min{初始分离度, √(2μ/L_1)}。
 
@@ -565,7 +565,7 @@ $$I(X_1..X_M; Y_1..Y_M) = \sum_i I(X_i; Y_i)$$
 
 **陈述**：定义任务对 (i,j) 的**共享系数**
 
-$$s_{ij} := \frac{I(Z_i;\, Z_j)}{\min\{H(Z_i),\, H(Z_j)\}} \in [0,1]$$
+$$s_{ij} := \frac{I(Z_i;\, Z_j)}{\min{H(Z_i),\, H(Z_j)}} \in [0,1]$$
 
 其中 Z_i = φ_i(X_i) 为任务 i 学到的表示。则聚合的**参数节省率**满足：
 
@@ -612,7 +612,7 @@ $$F^\*(\cdot|x,i) = \arg\min_{q \in \mathcal{F}_i} \text{KL}(f_i(\cdot|x) \,\|\,
 
 **定义（分歧度）**：任务对 (i,j) 的分歧度
 
-$$\delta_{ij} := \min_{\varphi_i, \varphi_j} \frac{\mathbb{E}_{x \sim D_i, x' \sim D_j}\left[\|\varphi_i(x) - \varphi_j(x')\|^2\right]}{\max\{H(Z_i), H(Z_j)\}}$$
+$$\delta_{ij} := \min_{\varphi_i, \varphi_j} \frac{\mathbb{E}_{x \sim D_i, x' \sim D_j}\left[\|\varphi_i(x) - \varphi_j(x')\|^2\right]}{\max{H(Z_i), H(Z_j)}}$$
 
 直观：两任务的最优表示在潜空间中的最小距离（归一化）。δ 小 = 任务相似（表示几乎重合）；δ 大 = 任务相异。
 
@@ -793,7 +793,7 @@ $$\bar{s}^{learn} := \max_{\varphi \in \Phi} \bar{s}\!\left(\varphi(X_i),\, \var
 
 **陈述**：知识空间不是纯流形，而是**连续流形 + 离散骨架**的混合结构：
 
-$$\mathcal{K} = \underbrace{\mathcal{M}_{cont}}_{\text{连续流形（感知/语义胶水）}} \;\cup\; \underbrace{\{\text{离散节点}\}}_{\text{事实/类别骨架}}$$
+$$\mathcal{K} = \underbrace{\mathcal{M}_{cont}}_{\text{连续流形（感知/语义胶水）}} \;\cup\; \underbrace{{\text{离散节点}}}_{\text{事实/类别骨架}}$$
 
 其中：
 1. **连续部分 M_cont**：感知相似性、渐进语义（颜色、声音、情感、类比方向）——流形假设在此成立，可插值；
